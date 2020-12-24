@@ -1,36 +1,52 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- incorrectly added external css without proper patch -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <title>Acme Web Design | Home</title>
+    </head>
 
-    <!-- 
-        PROCESS: 
-            (NOTE): No ABSOLUTE rules. Things are left up to interpretation by all devs. 
-            Can Nest stuff within stuff. Be creative.
+        <!-- 
+            PROCESS: HTML then CSS.
+                (NOTE): No ABSOLUTE rules. Things are left up to interpretation by all devs. 
+                Can Nest stuff within stuff. Be creative.
 
-            1. Work out the elements for a particular section at a time. Do only markup. No css.
-            2. Once the whole page is done. Figure out any sections to group together in a container due to global styling. (ie. equal margins)
-            3. Do css. (figure out the ids and classes).
-     -->
+                1. Work out the elements for a particular section at a time. Do only markup. No css.
+                2. Once the whole page is done. Figure out any sections to group together in a container due to global styling. (ie. equal margins)
+                3. Do css. (figure out the ids and classes).
 
-<body>
-    <div class="main-container">
+            CSS:
+                -think of it like painting on canvas.
+                -you start with the background. Then you paint other stuff on top of the background.
+                -ie. style the body which is the background. The smaller stuff like buttons go on top of the background.
+
+        -->
+
+    <body>
         <header>
-            <h1>Acme Web Design</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <div id="logo">
+                    <h1><span style="color: red;">Acme</span> Web Design</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><span style="color: red;">Home</span></a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <section>
-            <h1>Affordable Professional Websites</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, earum sint! Vel quod minus magnam porro reprehenderit quae eum voluptas?</p>
+
+        <section class="">
+            <div class="container">
+                <div class="flashy-title">Affordable Professional Websites</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit a ipsa eum saepe iure, voluptas nulla cum dicta ab obcaecati delectus magni distinctio? Alias ipsam error sapiente rerum eos. Illo tempora, dolore error ab aut veniam! Tempora sit eius autem?</p>
+            </div>
         </section>
+
         <aside>
             <h1>Subscribe To Our Newsletter</h1>
             <form>
@@ -38,6 +54,7 @@
                 <button type="submit">Subscribe</button>
             </form>
         </aside>
+
         <article>
             <!-- cmd + d: highlights multiple occurences -->
             <div>
@@ -56,10 +73,11 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ab quod ea eligendi dolores nostrum nulla nam necessitatibus sequi culpa.</p>
             </div>
         </article>
+
         <footer>
             <!-- Html Symbol Entities: Copyright symbol in html -->
             <p>Acme Web Design. Copyright &copy;2020</p>
         </footer>
-    </div>
-</body>
+
+    </body>
 </html>

@@ -1,0 +1,54 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+
+  /* cuts off stuff that go beyond the boundaries of this class. */
+  overflow: hidden;
+}
+
+header {
+  color: #fff;
+  background-color: #35424a;
+  min-height: 70px;
+  padding-top: 30px;
+  border-bottom: #e8491d 3px solid;
+}
+
+/* I want all the anchor tags that are descendants of a header tag. */
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#logo {
+  float: left;
+}
+
+header ul {
+  float: right;
+}
+
+header li {
+  list-style-type: none;
+  float: left;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+section {
+  text-align: center;
+  overflow-wrap: normal;
+}
+
+.flashy-title {
+  font-size: 350%;
+}
+
+.background-info {
+  background-image: url("businessman-taking-some-notes-information-600w-1172567740.jpg");
+}
