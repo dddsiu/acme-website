@@ -1,3 +1,4 @@
+/* global */
 body {
   margin: 0px;
   padding: 0px;
@@ -11,11 +12,11 @@ body {
   overflow: hidden;
 }
 
+/* header */
 header {
   color: #fff;
   background-color: #35424a;
   min-height: 70px;
-  padding-top: 30px;
   border-bottom: #e8491d 3px solid;
 }
 
@@ -29,20 +30,32 @@ header a {
   float: left;
 }
 
-header ul {
+header nav {
   float: right;
 }
 
 header li {
+  padding-top: 15px;
   list-style-type: none;
   float: left;
   padding-right: 20px;
   text-transform: uppercase;
 }
 
-section {
+.highlight {
+  color: red;
+}
+
+nav a:hover {
+  color: gray;
+  font-weight: bold;
+}
+
+/* section */
+section .container * {
   text-align: center;
-  overflow-wrap: normal;
+  color: white;
+  background-color: black;
 }
 
 .flashy-title {
@@ -50,5 +63,49 @@ section {
 }
 
 .background-info {
-  background-image: url("businessman-taking-some-notes-information-600w-1172567740.jpg");
+  background: url("../imgs/62383657-study-student-studying-hard-and-students-studying-learning-education-laptop-on-table-warm-tone.jpg");
+  background-position: -30px -100px;
+}
+
+section .flashy-title {
+  margin-top: 100px;
+}
+
+section p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* Aside */
+aside {
+  background-color: #35424a;
+  color: white;
+}
+
+aside h1 {
+  margin: 30px 0px;
+  float: left;
+}
+
+aside form {
+  padding: 30px 0px;
+  float: right;
+  margin-top: 2px;
+}
+
+aside form input[type="email"] {
+  float: left;
+  padding: 4px;
+  height: 20px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+aside form button {
+  float: left;
+  border-style: none;
+  background-color: red;
+  height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
