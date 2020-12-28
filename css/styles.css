@@ -108,4 +108,25 @@ aside form button {
   height: 32px;
   padding-left: 10px;
   padding-right: 10px;
+  color: white;
+}
+
+/* article */
+article .box {
+  float: left;
+  width: 31%;
+  margin: 20px 10px;
+  text-align: center;
+}
+
+/* setting the width automatically shrinks the height */
+article .box img {
+  width: 300px;
+}
+
+/* footer */
+footer {
+  background-color: #35424a;
+  padding: 20px 0px;
+  color: white;
 }
